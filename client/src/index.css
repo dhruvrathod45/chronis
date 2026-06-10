@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+body {
+  background: #050505;
+  color: white;
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.luxury-title {
+  font-family: "Playfair Display", serif;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.gold-card {
+  background: #0a0a0a;
+
+  border: 1px solid rgba(212, 175, 55, 0.15);
+
+  box-shadow:
+    0 0 0 1px rgba(212,175,55,.05),
+    0 10px 30px rgba(212,175,55,.08);
+
+  transition: all .35s ease;
+}
+
+.gold-card:hover {
+  border-color: rgba(212,175,55,.4);
+
+  box-shadow:
+    0 0 25px rgba(212,175,55,.15),
+    0 15px 45px rgba(212,175,55,.12);
+
+  transform: translateY(-6px);
+}
+.sidebar-item {
+  transition: all .3s ease;
+}
+
+.sidebar-item:hover {
+  transform: translateX(6px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 999px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 999px;
+}
