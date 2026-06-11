@@ -14,6 +14,7 @@
     "@fontsource/playfair-display": "^5.2.8",
     "@tailwindcss/vite": "^4.3.0",
     "axios": "^1.17.0",
+    "chronis-root": "file:..",
     "clsx": "^2.1.1",
     "framer-motion": "^12.40.0",
     "lucide-react": "^1.17.0",
