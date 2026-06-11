@@ -1,49 +1,52 @@
 import { motion } from "framer-motion";
 
-const particles = Array.from({ length: 20 });
+const particles = Array.from({ length: 25 });
 
 export default function FloatingBackground() {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {/* Large Glow */}
-      <div className="absolute top-20 left-20 h-[500px] w-[500px] rounded-full bg-yellow-500/10 blur-[180px]" />
-
-      <div className="absolute bottom-20 right-20 h-[400px] w-[400px] rounded-full bg-yellow-400/5 blur-[160px]" />
+      {/* Large Glows */}
+      <div className="absolute top-[10%] left-[5%] h-[600px] w-[600px] rounded-full bg-amber-500/5 blur-[180px]" />
+      <div className="absolute bottom-[10%] right-[5%] h-[500px] w-[500px] rounded-full bg-yellow-600/3 blur-[160px]" />
 
       {/* Floating Particles */}
-      {particles.map((_, index) => (
-        <motion.div
-          key={index}
-          className="absolute h-2 w-2 rounded-full bg-yellow-400/50"
-          initial={{
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
-            opacity: 0.2,
-          }}
-          animate={{
-            y: [
-              Math.random() * window.innerHeight,
-              Math.random() * window.innerHeight - 100,
-            ],
-            opacity: [0.2, 0.8, 0.2],
-          }}
-          transition={{
-            duration: 5 + Math.random() * 10,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        />
-      ))}
+      {particles.map((_, index) => {
+        const size = Math.random() * 2 + 1; // 1px to 3px
+        return (
+          <motion.div
+            key={index}
+            className="absolute rounded-full bg-yellow-500/30"
+            style={{
+              width: size,
+              height: size,
+            }}
+            initial={{
+              x: Math.random() * 1200,
+              y: Math.random() * 800,
+              opacity: Math.random() * 0.3 + 0.1,
+            }}
+            animate={{
+              y: ["0px", "-80px", "0px"],
+              opacity: [0.1, 0.5, 0.1],
+            }}
+            transition={{
+              duration: 10 + Math.random() * 15,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+        );
+      })}
 
-      {/* Grid Pattern */}
+      {/* Subtle Luxury Grid Pattern */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.015]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(255,215,0,0.3) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,215,0,0.3) 1px, transparent 1px)
+            linear-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(212, 175, 55, 0.15) 1px, transparent 1px)
           `,
-          backgroundSize: "80px 80px",
+          backgroundSize: "60px 60px",
         }}
       />
     </div>

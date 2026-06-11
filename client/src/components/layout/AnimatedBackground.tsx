@@ -2,29 +2,31 @@ import { motion } from "framer-motion";
 
 export default function AnimatedBackground() {
   return (
-    <div className="fixed inset-0 overflow-hidden -z-10">
+    <div className="fixed inset-0 overflow-hidden -z-10 bg-black">
       <motion.div
         animate={{
-          x: [0, 200, 0],
-          y: [0, -100, 0],
+          x: [0, 100, 0],
+          y: [0, -50, 0],
         }}
         transition={{
-          duration: 20,
+          duration: 15,
           repeat: Infinity,
+          repeatType: "reverse",
         }}
-        className="absolute top-0 left-0 h-[400px] w-[400px] rounded-full bg-violet-500/20 blur-[120px]"
+        className="absolute top-[-10%] left-[-10%] h-[600px] w-[600px] rounded-full bg-yellow-600/5 blur-[150px]"
       />
 
       <motion.div
         animate={{
-          x: [0, -200, 0],
-          y: [0, 100, 0],
+          x: [0, -100, 0],
+          y: [0, 50, 0],
         }}
         transition={{
-          duration: 25,
+          duration: 20,
           repeat: Infinity,
+          repeatType: "reverse",
         }}
-        className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-blue-500/20 blur-[120px]"
+        className="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-amber-500/3 blur-[130px]"
       />
     </div>
   );
