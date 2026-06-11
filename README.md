@@ -1,14 +1,24 @@
 # Chronis
 
-AI-Powered Behavioral Intelligence Platform
+Behavioral Intelligence & Insight Exploration Platform
+
+## Live Demo
+
+https://chronis-omega.vercel.app/
+
+## GitHub Repository
+
+https://github.com/dhruvrathod45/chronis
+
+---
 
 ## Overview
 
-Chronis is a behavioral intelligence platform designed to help users explore behavioral trends, understand AI-generated insights, and track long-term behavioral evolution through an intuitive and explainable interface.
+Chronis is a behavioral intelligence platform that transforms behavioral signals into explainable insights through visual analytics, confidence indicators, evidence-backed reasoning, and narrative timelines.
 
-The application transforms behavioral signals into meaningful insights using visual analytics, confidence indicators, evidence-based explanations, and narrative timelines.
+The platform helps users explore trends, understand behavioral changes, inspect AI-generated insights, and view long-term behavioral evolution in a transparent and user-friendly manner.
 
-This project was developed as part of the Chronis Product & App Engineer Assessment (Task C).
+This project was developed for the Chronis Product & App Engineer Assessment (Task C).
 
 ---
 
@@ -16,67 +26,49 @@ This project was developed as part of the Chronis Product & App Engineer Assessm
 
 ### Dashboard
 
-* Behavioral Trend Analytics
-* Confidence Indicators
-* Behavioral Score Metrics
-* AI Engine Status
-* Radar Metrics
-* Activity Feed
-* Productivity Trend Visualization
-* Recent Intelligence Logs
+* Behavioral score monitoring
+* Confidence indicators
+* Productivity trend visualization
+* Activity feed
+* AI engine status
+* Behavioral metrics
+* Recent intelligence logs
 
 ### Insight Explorer
 
-* Detailed Insight Analysis
-* Supporting Evidence Cards
-* Confidence Indicators
-* Missing Data Explanations
-* AI Narrative Explanations
-* Behavioral Recommendations
+* Insight inspection
+* Supporting evidence
+* Confidence scoring
+* Missing data explanations
+* Behavioral recommendations
+* AI-generated narrative summaries
 
 ### Narrative Timeline
 
-* Historical Behavioral Events
-* Behavioral Evolution Tracking
-* Chronological Insight Presentation
-* Timeline Navigation
+* Historical behavioral evolution
+* Chronological event tracking
+* Confidence milestones
+* Major behavioral changes
 
 ### Reporting Center
 
-* Weekly Reports
-* Monthly Reports
-* Report History
-* Export Actions
-* Intelligence Summaries
+* Weekly summaries
+* Monthly summaries
+* Report exports
+* Intelligence reporting
 
-### Settings
+### Authentication
 
-* User Preferences
-* Notification Settings
-* Theme Controls
-* AI Preferences
-* Profile Management
+* Login
+* Signup
+* Forgot Password
 
-### Authentication UI
+### Personalization
 
-* Login Interface
-* Signup Interface
-* Forgot Password Interface
-
----
-
-## Design Goals
-
-Chronis was designed with a focus on:
-
-* Explainability
-* Transparency
-* Product Thinking
-* User Experience
-* Responsive Design
-* Behavioral Intelligence Visualization
-
-The interface uses a premium luxury design language featuring a dark theme, gold accents, glassmorphism-inspired cards, smooth animations, and high-information-density layouts.
+* Theme switching
+* User settings
+* Notification preferences
+* Profile controls
 
 ---
 
@@ -89,17 +81,14 @@ The interface uses a premium luxury design language featuring a dark theme, gold
 * Vite
 * Tailwind CSS
 
-### Visualization
-
-* Recharts
-
-### Animation
+### UI & Animation
 
 * Framer Motion
-
-### Utilities
-
 * React CountUp
+
+### Data Visualization
+
+* Recharts
 
 ---
 
@@ -107,51 +96,46 @@ The interface uses a premium luxury design language featuring a dark theme, gold
 
 ```text
 client/
+├── public/
+├── screenshots/
 ├── src/
+│   ├── animations/
+│   ├── assets/
 │   ├── components/
-│   ├── pages/
 │   ├── data/
 │   ├── hooks/
-│   └── styles/
-│
-├── public/
+│   ├── pages/
+│   ├── services/
+│   └── types/
 ├── package.json
-└── vite.config.ts
+├── vite.config.ts
+└── vercel.json
 ```
 
 ---
 
 ## Installation
 
-Clone the repository:
+Clone repository:
 
 ```bash
 git clone https://github.com/dhruvrathod45/chronis.git
 ```
 
-Move into the project:
-
-```bash
-cd chronis/client
-```
-
 Install dependencies:
 
 ```bash
+cd client
 npm install
 ```
 
-Run locally:
+Run development server:
 
 ```bash
 npm run dev
 ```
 
----
-
-## Build
-
-Create a production build:
+Build project:
 
 ```bash
 npm run build
@@ -161,26 +145,19 @@ npm run build
 
 ## Screenshots
 
+Store screenshots inside:
 
-### Dashboard
+```text
+screenshots/
+```
 
-![Dashboard](screenshots/dashboard.png)
+Include:
 
-### Insight Explorer
-
-![Insights](screenshots/insights.png)
-
-### Timeline
-
-![Timeline](screenshots/timeline.png)
-
-### Reporting
-
-![Reporting](screenshots/reporting.png)
-
-### Settings
-
-![Settings](screenshots/settings.png)
+* Dashboard
+* Insights
+* Timeline
+* Reporting
+* Settings
 
 ---
 
@@ -192,22 +169,21 @@ See:
 product-rationale.md
 ```
 
-for:
+This document contains:
 
-* Three UX Decisions
-* One Tradeoff
-* One Future Feature
+* Three UX decisions
+* One product tradeoff
+* One future enhancement
 
 ---
 
 ## Future Improvements
 
-* Predictive Behavioral Forecasting
-* Personalized AI Coaching
-* Real-Time Behavioral Signal Processing
-* Advanced Reporting Engine
-* Behavioral Anomaly Detection
-* Team & Organization Dashboards
+* Real-time behavioral signal processing
+* Predictive insight forecasting
+* Personalized coaching recommendations
+* Advanced reporting exports
+* Multi-user collaboration
 
 ---
 
@@ -215,14 +191,27 @@ for:
 
 Dhruv Rathod
 
-GitHub:
-https://github.com/dhruvrathod45
+GitHub: https://github.com/dhruvrathod45
 
-LinkedIn:
-https://www.linkedin.com/in/dhruvrathod45/
+LinkedIn: https://www.linkedin.com/in/dhruvrathod45/
+
+---
+
+## Assessment Notes
+
+The project fulfills the following Task C requirements:
+
+* Dashboard
+* Insight Explorer
+* Narrative Timeline
+* Product Judgment
+* Responsive Design
+* Deployable Build
+* Documentation
+* GitHub Submission
 
 ---
 
 ## License
 
-This project was created for educational and assessment purposes.
+Created for educational and assessment purposes.
