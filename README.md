@@ -161,7 +161,6 @@ npm run build
 
 ## Screenshots
 
-Add screenshots here before submission:
 
 ### Dashboard
 
